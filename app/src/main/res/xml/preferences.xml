@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Account Settings">
+
+        <EditTextPreference
+            android:title="User name"
+            android:key="username"/>
+
+        <MultiSelectListPreference
+            android:title="Services"
+            android:entries="@array/services"
+            android:entryValues="@array/services"
+            android:key="services"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="App Settings">
+
+        <SwitchPreference
+            android:title="Notifications?"
+            android:key="notifications"/>
+
+    </PreferenceCategory>>
+
+</PreferenceScreen>
